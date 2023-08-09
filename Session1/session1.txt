@@ -1,0 +1,47 @@
+tokakhaled@pop-os:~$ cd Desktop
+tokakhaled@pop-os:~/Desktop$ mkdir "Toka Khaled"
+tokakhaled@pop-os:~/Desktop$ cd "Toka Khaled"
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ pwd
+/home/tokakhaled/Desktop/Toka Khaled
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ mkdir Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cd Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ touch file1.txt file2.txt file3.txt
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ ls
+file1.txt  file2.txt  file3.txt
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ cd ..
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ touch ..hidden_file
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ ls
+Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ ls -a
+.  ..  Documents  ..hidden_file
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ nano file1.txt
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cat file1.txt
+hello world
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cd Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ mkdir -- -
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ cd ./-
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents/-$ cd ..
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ cd ..
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cp -r Documents/ My_Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ ls
+Documents  file1.txt  My_Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cat ..hidden_file
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cd Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ mv file2.txt file3.txt ../
+tokakhaled@pop-os:~/Desktop/Toka Khaled/Documents$ cd ..
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ ls
+Documents  file1.txt  file2.txt  file3.txt  My_Documents
+tokakhaled@pop-os:~/Desktop/Toka Khaled$ cd ..
+tokakhaled@pop-os:~/Desktop$ rm -r "Toka Khaled"
+tokakhaled@pop-os:~/Desktop$ ld
+ld: no input files
+tokakhaled@pop-os:~/Desktop$ ls
+tokakhaled@pop-os:~/Desktop$ 
+
+ 
+
+
+
+
+
+
