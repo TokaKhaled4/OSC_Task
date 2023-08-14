@@ -1,0 +1,348 @@
+tokakhaled@pop-os:~/Desktop$ unzip Updated-Task-02.zip
+Archive:  Updated-Task-02.zip
+   creating: Updated-Task-02/
+  inflating: Updated-Task-02/README.txt  
+  inflating: Updated-Task-02/.level-1.tar  
+tokakhaled@pop-os:~/Desktop$ cd Updated-Task-02
+tokakhaled@pop-os:~/Desktop/Updated-Task-02$ ls
+README.txt
+tokakhaled@pop-os:~/Desktop/Updated-Task-02$ cat README.txt
+Locate what you can't see.
+Find out what to do with it.
+tokakhaled@pop-os:~/Desktop/Updated-Task-02$ ls -a
+.  ..  .level-1.tar  README.txt
+tokakhaled@pop-os:~/Desktop/Updated-Task-02$ tar -xf .level-1.tar
+tokakhaled@pop-os:~/Desktop/Updated-Task-02$ cd .level-1
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ cat README.txt
+Decompress "level-2".
+Hint: Most compression tools require it's suffix.
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ mv level-2 level-2.gz
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ gunzip level-2.gz
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ mv level-2 level-2.tar
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ tar -xf level-2.tar
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1$ cd level-2
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2$ cat README.txt
+Locate "level-3".
+Use a general method to decompress it.
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2$ find . -name "level-3"
+./gBT5u0vLT5/level-3
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2$ cd gBT5u0vLT5
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ mv level-3 level-3.bz
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ bunzip2 level-3.bz
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ mv level-3 level-3.tar
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ tar -xf level-3.tar
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5$ cd level-3
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cat README.txt
+You're seeking a file with a certain size.
+Find the link to get the size.
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ ls -li
+total 804
+1188708 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 00aBxtql7r
+1188882 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 0aba2tPi4R
+1188896 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 0QYBUNJixX
+1188961 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 17pfO4tY4m
+1188672 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 1NBA3mJTQC
+1188715 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 1pnvifRmA6
+1188856 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 22ix6enm8X
+1188655 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 2GsF4Kn1PG
+1188940 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 2IFaRh0Jxc
+1188951 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 30msooUqJf
+1188582 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 3Ig28f7Xa8
+1188885 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 3SSDrwrwmt
+1188850 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 3TpnDd6PaY
+1188950 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 3wTdqmDig6
+1188669 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 3XXNloi4gV
+1188964 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 3YhvETOVcv
+1188910 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 4jFmUBgygR
+1188636 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 4vG2fYLy6B
+1188667 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 53IaK7n1np
+1188958 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 5H5OLdA8qE
+1188647 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 5ME7YKcHsa
+1188876 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 5tAchjHlmE
+1188659 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 5tJnO1Mwzf
+1188954 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 5VoPA03kvi
+1188656 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6AJpxbHYkm
+1188874 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6C8RwQ9kGP
+1188933 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6hnWZbro0I
+1188860 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6JPHCI1K8M
+1188853 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6lie6mPCRe
+1188641 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 6mnK6keHIi
+1188695 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6mpTfHgnlX
+1188905 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6vigp6VM7d
+1188615 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 6ZJgIXN3P0
+1188898 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 71qxiSKgAY
+1188886 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 74gKRNrKVf
+1188646 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 77RwxhcZTx
+1188697 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 7C4OyiuQc4
+1188939 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 7nMGZvigiL
+1188057 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 7PFGHcmfa2
+1188633 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 7sxFwD2jGw
+1188580 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 82aRYKaCZB
+1188904 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 88exEg2MMo
+1188589 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 8IOqsSAWIo
+1188897 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 8OLXyd5ai0
+1188871 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 8u4f62oAYb
+1188651 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 8X1ovlX6ex
+1188574 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 9CA6eRBprt
+1188688 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 9GqYmpQsAS
+1188962 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 9my7brVWmo
+1188658 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 9NNnGuH7A1
+1188657 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 9QBLcfEf91
+1188671 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 a6HPyy5Mz5
+1188960 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 A8SqBitLRB
+1188687 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 aFjSvqXqWE
+1188966 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 AI8sfDgnhT
+1188891 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 AJtW9NcRLy
+1188851 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 ANRcGwDkvK
+1188969 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ayHSb1kjNd
+1188941 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 b4BF572o41
+1188923 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 b957oPA24t
+1188694 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Bb0kZiNxDz
+1188635 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 BbreWoCXSv
+1188678 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 bduLsR7v4K
+1188722 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 bOKXTvk63r
+1188889 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 BrJvEu79eg
+1188709 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 BTf86zJsB3
+1188921 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 byVoAmiOqs
+1188858 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 bze36b6xjZ
+1188630 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 C5KrlOGYlu
+1188852 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 cDfzzIGULi
+1188628 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cF1AG2dtLr
+1188968 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cjcKUQDGLl
+1188577 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cKiyNtE0yD
+1188568 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 ClbTpohwVU
+1188645 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cStCLsSELl
+1188642 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 ctnOoPIga1
+1188570 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 cWRi45wacA
+1188879 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cWZv9iI87X
+1188712 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 cX6YaqFDFY
+1188867 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 D5JYr3I592
+1188915 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 dBJSXzmpb1
+1188689 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Dd9KxIjxSB
+1188726 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 dK320XCmR0
+1188684 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 DKiaUm3WBb
+1188587 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Doi1I9Z8TE
+1188877 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 dqbKkDKbZl
+1188612 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 dtLZdglPV3
+1188866 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Dux6sHDdCW
+1188683 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 EHm7bcCxj1
+1188920 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 epBL6naqQR
+1188895 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 ePj0HMi3nh
+1188585 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Eqk382soFH
+1188703 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 eT21MMr22o
+1188863 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 eT909HWyck
+1188600 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ETRyNzIpYk
+1188581 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 ev8BCScTMa
+1188847 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 F5Db7l8s9j
+1188644 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 F9OYJjkGiB
+1188724 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 fCLOGDR05y
+1188675 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Fdvgo1aqTT
+1188614 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 FeBBLsJEYS
+1188629 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 FJsgrBEwbJ
+1188594 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 flbjrqIXMS
+1188946 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 fn95Z2sG3o
+1188674 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 FYrh0rmC4q
+1188605 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 G9UhKYNLgv
+1188728 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 GaMed1WIDN
+1188887 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 gcb0bfLbVM
+1188571 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 gfLQDXjJAW
+1188965 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 Gksn5ca8Jn
+1188971 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 gOWuBZZgn2
+1188894 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 GPaN65ikSl
+1188622 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 gu78Zpnknw
+1188956 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 gu92R3c92I
+1188844 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 gupiPOsJzC
+1188845 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 hb4zKjD5G4
+1188603 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 hBv1LejGKu
+1188648 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Hf8ovJhWKI
+1188620 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 hGCeu2NgZ5
+1188716 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 HuSBc8QKYi
+1188911 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 HXq7gqQZ5Z
+1188567 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 i4CkeVfT7S
+1188872 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 iCR4qC97HM
+1188704 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 IE4xWwbydi
+1188906 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 IiLRIuK1Fi
+1188673 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 IKeqpTmvmW
+1188917 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ioOe8b7TsJ
+1188893 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 iOplykVsBo
+1188727 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ip23ESdwGT
+1188649 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 IygdcTaoYP
+1188626 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 iymCtoFUVf
+1188597 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 j3JsNAEsm1
+1188957 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 J3K5BY52dp
+1188947 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 J5feTUwPso
+1188878 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 jahdjqT54b
+1188725 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 JArjmQWPVq
+1188693 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 JBDnoFKLcx
+1188677 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 JbMcWq9tku
+1188619 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Jc0EEC4sua
+1188592 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 JgVwSWAUsr
+1188843 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 JlhNaDm4f7
+1188854 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 JnOT2WHKbE
+1188653 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 jpO4wGMT57
+1188927 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 JqAekDHYif
+1188631 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 jrMKucOmtp
+1188883 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 jVBkVAbTHj
+1188575 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 jVGv0HeZvG
+1188598 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 jvyPQ8Z8ht
+1188855 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 JYdPDFpOIe
+1188618 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 k2yYJNQcLu
+1188632 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 K56S3V4AQ6
+1188861 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 K9kyHBbw7y
+1188662 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 Kfce3CFjhh
+1188930 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 KJBdbwTmzD
+1188611 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 kkIu8kVXLo
+1188862 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 kOIOppD8hx
+1188710 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 kp1ujuDGKO
+1188902 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 krWRFtvYDP
+1188846 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 kT3eEAfVcY
+1188599 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 kwmQK5z76U
+1188602 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 L5DOn3iY18
+1188859 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 L8ZzpZTLz5
+1188935 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 LeUtklcfmE
+1188907 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 LKfMizQQjE
+1188870 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 lowIuX2RQI
+1188953 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 LtH4X99Uw3
+1188576 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 LZ5jebusoa
+1188912 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 M1vV6QxnH1
+1188624 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 m59pSiQG2p
+1188730 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 m7lRDpRTUJ
+1188888 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 MaqkHpS39h
+1188938 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 MKQErXMkPE
+1188590 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 moQuVgMB1f
+1188573 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 mRET49bBGR
+1188868 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 mu6c42Y1qo
+1188926 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 mwILTjPhCP
+1188903 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 mxG418at98
+1188944 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 mydABLXwyL
+1188713 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 n4d9SlSzcV
+1188701 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 n4MCXv5XM2
+1188437 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 N5lXyVotHN
+1188928 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 nBoQgGxoGX
+1188584 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 NdkrRTZmr9
+1188676 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 NHag0dTW3U
+1188595 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 nlgqxKuRC3
+1188643 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 NLM96g2hH3
+1188922 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 Nmuh6DvLkc
+1188664 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 nR711EHtmU
+1188661 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 nSC9OkT1E3
+1188942 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 nwt49CVPtC
+1188723 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 O009zeKkif
+1188692 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 O0V7mQCicJ
+1188579 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 o6Q2i1NUXc
+1188685 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 OAbH1oFg57
+1188848 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 OaRp7TV8pe
+1188593 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ObIefWWqqM
+1188569 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 OFx3U24MoP
+1188565 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 OHWTswrtBk
+1188583 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ojc7SuLzMV
+1188719 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 orzpz7CBBQ
+1188617 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Ou1q6zOh5n
+1188681 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 oV3aef60WL
+1188873 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 OXZ3OOGJ7O
+1188914 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 oZ5HOQe6X0
+1188705 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 p194n4sSpi
+1188686 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 p3ARvi0q4F
+1188586 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 p6PVEBfSyK
+1188707 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 PaOzJn0sJV
+1188668 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 PDJdFxfgvh
+1188663 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 penDnjNMQc
+1188718 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 pH9s3o8foP
+1188849 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 pI49N7Zoxn
+1188711 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Pmf5TqkkYg
+1188670 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 pO4Lt5DPrX
+1188608 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 psmL4dk69Y
+1188943 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 pXXxEWcKkz
+1188591 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 q4gh4nODZa
+1188639 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 qFO0JDSF0N
+1188606 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Qh9GBAd3mF
+1188937 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 QM053Y9Vw1
+1188679 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 R0LpA1qK4F
+1188900 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 R6okint5JZ
+1188698 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 R82WkcyQAx
+1188696 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 rcEkx0b0WC
+1188609 -rw-r--r-- 1 tokakhaled tokakhaled   75 Aug  9 20:35 README.txt
+1188625 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 rgNTkxVkxN
+1188869 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 RnL5L0QLbY
+1188875 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 RPZAvV75tm
+1188864 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 RU4rJzjPfg
+1188884 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 RWWLnFwGtv
+1188918 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 rwZwqdxHhJ
+1188936 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 rzSTDqa7oV
+1188880 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 SaaZymLdoG
+1188613 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 SaQtx8SNld
+1188637 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 sf7ajd5INC
+1188842 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 skVRxkHK04
+1188841 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 sNrtW0eiZF
+1188601 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 SqAZPx7CbA
+1188682 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 SRgPbWeEG6
+1188721 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 sRhTcN4PIw
+1188638 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 sVyNLUXzut
+1188857 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 T0gYx5T5ks
+1188949 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 Tbi1MdwiMX
+1188699 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 tEgA7tGwxB
+1188627 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 TezFlyJz9o
+1188934 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 TFkiwAHDrG
+1188665 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Tt0xmDrg4Y
+1188680 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 tZCE2HQg8s
+1188714 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 uAw4PKT7E0
+1188881 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 udqz57oeuX
+1188623 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ufdeX2Dk7C
+1188660 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 v2ME2J4GuF
+1188691 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 V64A9vKnYq
+1188972 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 vkaOISlk2I
+1188610 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 vLWtq7N2aR
+1188865 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 VneCQhwmfv
+1188929 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 vUbRKbYlKR
+1188640 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Vw5Jm3saUP
+1188578 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 vz1uLzTKjO
+1188916 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 VZw2jtUdZD
+1188596 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 W6AdwbmalK
+1188604 -rw-r--r-- 1 tokakhaled tokakhaled   34 Aug  9 20:35 WfUKyzFeEv
+1188634 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 WFyKhZdOcx
+1188700 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 wgibrPHhJq
+1188899 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 WhTtCYas3M
+1188919 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 wJC19bchr2
+1188967 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 WLuasYnMvP
+1188913 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Wm14GdEGcm
+1188892 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 wpJyCPLODS
+1188616 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 wpoGQ7WmSg
+1188690 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 WSxUR7IJd8
+1188729 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 wZ4LJKpHW6
+1188901 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 x2CDPgz6Jk
+1188621 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 x3Nvoy3Ucl
+1188908 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 x3SkxfEItU
+1188948 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 X62Vq1yIyL
+1188588 lrwxrwxrwx 1 tokakhaled tokakhaled   10 Aug  9 20:35 X6lkChFKsj -> WfUKyzFeEv
+1188652 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 XapfbudtZp
+1188654 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 xBsGYZHomA
+1188932 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 xigSiLU79u
+1188566 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 XkrAGaosYZ
+1188945 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 xRxKkdCTU8
+1188925 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 xYCpOSRLsl
+1188572 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 xYlmccmE5f
+1188607 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 Y0nB0Ep1my
+1188963 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 y1IAp2YdZc
+1188924 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 Ye8R8ZOvJ9
+1188959 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ygasPrK3kG
+1188909 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 YgeyHmPrtP
+1188717 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ysdoXYcYQq
+1188952 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 YVAPjrh8Up
+1188720 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zEmK04yIqc
+1188890 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ZenzUsQydR
+1188650 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zet1AFeHNl
+1188666 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zghxQE4JGJ
+1188970 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 ZNq1fiVP6F
+1188955 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zTfi6AwgZQ
+1188931 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zxmnKldpmY
+1188706 drwxr-xr-x 2 tokakhaled tokakhaled 4096 Aug  9 20:35 zzgiKI2xSS
+1188702 -rw-r--r-- 1 tokakhaled tokakhaled    0 Aug  9 20:35 zZU6ymQky6
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cat X6lkChFKsj
+73 bytes is your target file size
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ find . -size 73c
+./m7lRDpRTUJ/xVMvVOKNW5
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3$ cd m7lRDpRTUJ
+tokakhaled@pop-os:~/Desktop/Updated-Task-02/.level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ cat xVMvVOKNW5
+Congrats!! You have finished the Task Successfully, you can rest now :D.
+
+
