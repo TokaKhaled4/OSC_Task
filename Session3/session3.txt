@@ -1,0 +1,120 @@
+tokakhaled@pop-os:~$ sudo useradd -m osc
+[sudo] password for tokakhaled: 
+tokakhaled@pop-os:~$ sudo passwd osc
+New password: 
+Retype new password: 
+passwd: password updated successfully
+tokakhaled@pop-os:~$ sudo groupadd osc_group
+tokakhaled@pop-os:~$ sudo usermod -aG osc_group osc
+tokakhaled@pop-os:~$ groups osc
+osc : osc osc_group
+tokakhaled@pop-os:~$ sudo usermod -aG sudo osc
+tokakhaled@pop-os:~$ groups osc
+osc : osc sudo osc_group
+tokakhaled@pop-os:~$ su osc
+Password: 
+$ cd /home/osc
+$ pwd
+/home/osc
+$ mkdir permission_practice
+$ cd permission_practice
+$ pwd
+/home/osc/permission_practice
+$ touch public_file.txt        
+$ chmod a+r public_file.txt 
+$ ls -l
+total 0
+-rw-rw-r-- 1 osc osc 0 Aug 18 23:00 public_file.txt
+$ chmod a+w public_file.txt 
+$ ls -l
+total 0
+-rw-rw-rw- 1 osc osc 0 Aug 18 23:00 public_file.txt
+$ touch private_file.txt
+$ chmod 600 private_file.txt
+$ ls -l
+total 0
+-rw------- 1 osc osc 0 Aug 18 23:04 private_file.txt
+-rw-rw-rw- 1 osc osc 0 Aug 18 23:00 public_file.txt
+$ touch executable_script.sh
+$ chmod 750 executable_script.sh
+$ ls -l
+total 0
+-rwxr-x--- 1 osc osc 0 Aug 18 23:06 executable_script.sh
+-rw------- 1 osc osc 0 Aug 18 23:04 private_file.txt
+-rw-rw-rw- 1 osc osc 0 Aug 18 23:00 public_file.txt
+$ sudo chown tokakhaled private_file.txt
+[sudo] password for osc: 
+$ ls -l
+total 0
+-rwxr-x--- 1 osc        osc 0 Aug 18 23:06 executable_script.sh
+-rw------- 1 tokakhaled osc 0 Aug 18 23:04 private_file.txt
+-rw-rw-rw- 1 osc        osc 0 Aug 18 23:00 public_file.txt
+$ sudo chgrp osc_group private_file.txt
+$ ls -l
+total 0
+-rwxr-x--- 1 osc        osc       0 Aug 18 23:06 executable_script.sh
+-rw------- 1 tokakhaled osc_group 0 Aug 18 23:04 private_file.txt
+-rw-rw-rw- 1 osc        osc       0 Aug 18 23:00 public_file.txt
+tokakhaled@pop-os:~$ sleep 1000 &
+[1] 3480
+tokakhaled@pop-os:~$ jobs
+[1]+  Running                 sleep 1000 &
+tokakhaled@pop-os:~$ ps
+    PID TTY          TIME CMD
+   3410 pts/0    00:00:00 bash
+   3480 pts/0    00:00:00 sleep
+   3482 pts/0    00:00:00 ps
+tokakhaled@pop-os:~$ kill -9 3480
+tokakhaled@pop-os:~$ ps
+    PID TTY          TIME CMD
+   3410 pts/0    00:00:00 bash
+   3483 pts/0    00:00:00 ps
+[1]+  Killed                  sleep 1000
+tokakhaled@pop-os:~$ vim
+
+[1]+  Stopped                 vim
+tokakhaled@pop-os:~$ killall -9 vim
+tokakhaled@pop-os:~$ ps
+    PID TTY          TIME CMD
+   3410 pts/0    00:00:00 bash
+   3486 pts/0    00:00:00 ps
+[1]+  Killed                  vim
+tokakhaled@pop-os:~$ jobs
+tokakhaled@pop-os:~$ ps
+    PID TTY          TIME CMD
+   3410 pts/0    00:00:00 bash
+   3490 pts/0    00:00:00 ps
+tokakhaled@pop-os:~$ sudo apt install neofetch
+[sudo] password for tokakhaled: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  neofetch
+0 upgraded, 1 newly installed, 0 to remove and 179 not upgraded.
+Need to get 84.3 kB of archives.
+After this operation, 359 kB of additional disk space will be used.
+Get:1 http://apt.pop-os.org/ubuntu jammy/universe amd64 neofetch all 7.1.0-3 [84.3 kB]
+Fetched 84.3 kB in 0s (229 kB/s)
+Selecting previously unselected package neofetch.
+(Reading database ... 212224 files and directories currently installed.)
+Preparing to unpack .../neofetch_7.1.0-3_all.deb ...
+Unpacking neofetch (7.1.0-3) ...
+Setting up neofetch (7.1.0-3) ...
+Processing triggers for man-db (2.10.2-1) ...
+tokakhaled@pop-os:~$ sudo apt remove neofetch
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  caca-utils chafa jp2a libchafa0 toilet toilet-fonts
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  neofetch
+0 upgraded, 0 newly installed, 1 to remove and 179 not upgraded.
+After this operation, 359 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 212228 files and directories currently installed.)
+Removing neofetch (7.1.0-3) ...
+Processing triggers for man-db (2.10.2-1) ...
+
